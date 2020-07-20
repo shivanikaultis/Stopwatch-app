@@ -8,8 +8,8 @@ export class LapList extends Component {
     return (
       <div>
         {laps.map((lap, i) => {
-          if(i > 3){
-            alert("cant exceed more than 5 times laps");
+          if(i > 4){
+            alert("Cant exceed more than 5 times laps");
           } else{
             const lapNumber = laps.length - i;
             return (

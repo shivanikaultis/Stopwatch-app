@@ -46,7 +46,9 @@ class App extends Component {
         <h1>Stopwatch</h1>
         <Timer label={'Total'} time={this.state.totalTime} />
         <StopwatchControls />
-        <Lap label={`Lap #${this.props.laps.length + 1}`} time={this.state.currentLapTime} />
+        {/* {this.state.currentLapTime ?
+          <Lap label={`Lap #${this.props.laps.length + 1}`} time={this.state.currentLapTime} />
+          : null } */}
         <LapList />
       </div>
     );
